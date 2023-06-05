@@ -1,0 +1,308 @@
+.back{
+			background: url("resim/download.jpg") center center fixed; 
+			background-size: cover;
+		}
+		.containerr{
+			width: 75%;
+    		padding: 30px;
+     		background-color:#4D4848;
+     		border-radius: 7px;
+    		box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+			text-align: center;
+			height: 100%;
+			background-color:#DDDDDD;
+			margin: auto;
+		}
+		.fill {
+			text-align: center;
+  			position: relative;
+  			/*display:block;*/
+ 			height: 45px;
+  			width: 60%;
+  			margin: 10px 7px;
+  			padding: 5px 5px;
+  			font-weight: 700;
+  			font-size: 25px;
+  			letter-spacing: 2px;
+  			color: #383736;
+  			border: 2px #383736 solid;
+  			border-radius: 5px;
+  			outline: 0;
+  			overflow:hidden;
+  			background: none;
+  			z-index: 1;
+  			cursor: pointer;
+  			transition: 0.08s ease-in;
+			transition: 0.08s ease-in;
+  			transition: 0.08s ease-in;
+  			transition: 0.08s ease-in;
+  			transition: 0.08s ease-in;
+		}
+
+		.fill:hover {
+  			color: whitesmoke;
+		}
+
+		.fill:before {
+  			content: "";
+  			position: absolute;
+  			background: #383736;
+  			bottom: 0;
+  			left: 0;
+  			right: 0;
+  			top: 100%;
+  			z-index: -1;
+  			webkit-transition: top 0.09s ease-in;
+		}
+
+		.fill:hover:before {
+  			top: 0;
+		}
+		.from-text{
+			width: 10px;
+			height: 20px;
+		}
+		.wrapper{
+			width: 100%;
+			height: auto;
+			text-align: center;
+		}
+		.text-input{
+			width: 100%;
+			height: auto;
+			text-align: center;
+		}
+		}@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+* {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-family: 'Poppins',sans-serif;
+}
+body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0px 10px;
+     min-height: 100vh;
+     background-color: #5372F0;
+}
+.container {
+     width: 100%;
+     max-width: 690px;
+     padding: 30px;
+     background-color: #fff;
+     border-radius: 7px;
+     box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+.wrapper {
+     border: 1px solid #ccc;
+     border-radius: 5px;
+}
+.wrapper .text-input {
+     display: flex;
+     border-bottom: 1px solid #ccc;
+}
+.wrapper .text-input .to-text {
+}
+.wrapper .text-input textarea {
+     width: 100%;
+     height: 250px;
+     border: none;
+     border-radius: 5px;
+     outline: none;
+     resize: none;
+     background: none;
+     font-size: 18px;
+     padding: 10px 15px;
+}
+.wrapper .text-input textarea::placeholder {
+     color: #b7b6b6;
+}
+.controls,li,.icons,.icons .fas {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.controls {
+     list-style: none;
+     padding: 12px 15px;
+}
+.controls .row .icons {
+     width: 38%;
+}
+.controls .row .icons .fas {
+     width: 50px;
+     color: #adadad;
+     font-size: 14px;
+     cursor: pointer;
+     justify-content: center;
+     transition:  transform 0.2s ease;
+}
+.controls .row.from .icons {
+     padding-right: 15px;
+     border-right: 1px solid #ccc;
+}
+.controls .row.to .icons {
+     padding-left: 15px;
+     border-left: 1px solid #ccc;
+}
+.controls .row select {
+     color: #333;
+     border: none;
+     outline: none;
+     background: none;
+     color: #333;
+     font-size: 18px;
+     padding-left: 5px;
+}
+.text-input textarea::-webkit-scrollbar {
+     width: 5px;
+}
+.controls .row select::-webkit-scrollbar {
+     width: 8px;
+}
+.text-input textarea::-webkit-scrollbar-track,.controls .row select::-webkit-scrollbar-track {
+     background-color: #fff;
+}
+.text-input textarea::-webkit-scrollbar-thumb {
+     background-color: #ddd;
+     border-radius: 8px;
+}
+.controls .row select::-webkit-scrollbar-thumb {
+     background-color: #999;
+     border-right: 2px solid #ffffff;
+     border-radius: 8px;
+}
+.controls .exchange {
+     color: #adadad;
+     cursor: pointer;
+     font-size: 16px;
+     transition: transform 0.2s ease;
+}
+.controls .fas:active {
+     transform: scale(0.9);
+}
+.container button {
+     width: 100%;
+     margin-top: 20px;
+     padding: 10px;
+     border: none;
+     border-radius: 5px;
+     outline: none;
+     background-color: #5372F0;
+     color: #fff;
+     font-size: 17px;
+     cursor: pointer;
+}
+@media only screen and (max-width:660px){
+     .container {
+          padding: 20px;
+     }
+     .wrapper .text-input {
+          flex-direction: column;
+     }
+     .text-input .to-text {
+		 border-top-style:solid;
+		 
+     }
+     .text-input textarea {
+          height: 200px;
+		  width: 70%;
+     }
+     .controls .row .icons {
+          display: none;
+     }
+     .container button {
+          padding: 13px;
+          font-size: 16px;
+     }
+     .controls .row select {
+          font-size: 16px;
+     }
+     .controls .exchange {
+          font-size: 14px;
+     }
+}
+div, img {
+  margin: 10px;
+}
+.square {
+  width: 100px;
+  height: 50;
+}
+.target {
+  clear: both;
+  border: dashed 4px #888;
+  padding: 10px;
+  min-height: 50px;
+  margin: 10px;
+  position: relative;
+}
+.target .name {
+
+}
+.target.dragover {
+  border: solid 4px #F00;
+  background-color: #FBB;
+}
+
+.blue {
+  background-color: #00F;
+}
+.red {
+  background-color: #F00;
+}
+
+
+
+.name, .food {
+  float: left;
+  border: solid 1px #00F;
+  padding: 3px;
+}
+
+.food {
+  border: solid 1px #0F0;
+}
+
+.target.names.dragover {
+  border: solid 4px #00F;
+  background-color: #BBF;
+}
+.target.foods.dragover {
+  border: solid 4px #0F0;
+  background-color: #BFB;
+}
+
+
+.indicator {
+  position: absolute;
+  background-color: #BBF;
+  width: 100px;
+  padding: 10px;
+  left: -30px;
+}
+
+.dropIndicator {
+  Visibility: hidden;
+  background-color: #FBB;
+  padding: 10px;
+  position: absolute;
+  right: 0px;
+}
+
+.name.dragging {
+  opacity: 0.3;
+  border: dotted 1px #00F;
+}
+
+.target.images {
+  height: 75px;
+	width: 96%;
+}
+
+.target.images > img {
+  width: 100px;
+  float: left;
+}

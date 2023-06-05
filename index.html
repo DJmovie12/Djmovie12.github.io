@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+	 <title>Gelişmiş Çevirici</title>
+	 <link rel="stylesheet" href="style.css">
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css' integrity='sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==' crossorigin='anonymous'/>
+     <script src="countries.js" defer></script>
+     <script src="script.js" defer></script>
+</head>
+	<style>
+		.textsakla{
+			width: 0px;
+			height: 0px;
+		}
+	</style>
+<body class="back">
+
+     <div class="containerr">
+		 <div>
+		<form action="upload.php" method="post" enctype="multipart/form-data">
+			Lütfen Çevirilecek PDFyi buraya Yükleyiniz: <input name="dosya" type="file"><br>
+			<input class="fill" type="submit" value="PDF'i Çevir"> 
+			 </form>
+		 </div>
+          <div class="wrapper">
+               <div class="text-input">
+				   <form name="cevirenform">
+                    <textarea class="from-text" name="fromtextt" cols="100%" rows="20%" spellcheck="false" placeholder="Metninizi Giriniz"></textarea><br><hr color="#ccc">
+                    <textarea class="to-text" cols="90%" rows="20%" spellcheck="false" placeholder="Tercümesi" readonly disabled></textarea>
+				   </form>
+               </div>
+               <ul class="controls">
+                    <li class="row from">
+                         <div class="icons">
+                              <i class="fas fa-volume-up" id="from"></i>                         </div>
+                         <select></select>
+                    </li>
+                    <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+                    <li class="row to">
+                         <select></select>
+                         <div class="icons">
+                              <i class="fas fa-volume-up" id="to"></i>
+                         </div>
+                    </li>
+               </ul>
+          </div>
+          <button class="fill" onClick="ShowEnter()">Çevir</button>
+
+     </div>	
+</body>
+</html>
